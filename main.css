@@ -1,4 +1,3 @@
-/* Fondo oscuro general */
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-/* TITULOS EN TODAS LAS SECCIONES */
 h2 {
   font-family: "Anton", sans-serif;
   font-size: 3rem;
@@ -17,21 +15,19 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* ESTILO GENERAL DE CONTENIDO */
 .rectangulo-pagina {
   margin-left: 240px;
   padding: 40px;
 }
 
 /* HOME */
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo general del body */
 body {
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
@@ -44,7 +40,6 @@ body {
   overflow: hidden;
 }
 
-/* Video de fondo */
 .video-background {
   position: fixed;
   top: 0;
@@ -60,13 +55,13 @@ body {
   height: 100%;
   object-fit: cover;
 }
-/* Caja negra de "Sobre mí" */
+
 .sobre-mi-box {
   position: absolute;
   top: 40px;
   bottom: 40px;
-  left: 0; /* Deja que ocupe todo el ancho de la pantalla */
-  right: 0; /* Deja que ocupe todo el ancho de la pantalla */
+  left: 0;
+  right: 0;
   background-color: black;
   z-index: 0;
   padding: 40px;
@@ -75,7 +70,6 @@ body {
   gap: 20px;
 }
 
-/* Contenedor principal */
 .container {
   display: flex;
   width: 100%;
@@ -85,7 +79,6 @@ body {
   padding: 0 60px;
 }
 
-/* Nombre en el lado izquierdo */
 .nombre-container {
   display: flex;
   justify-content: center;
@@ -103,7 +96,6 @@ body {
   white-space: nowrap;
 }
 
-/* Menú en el lado derecho */
 .menu-container {
   display: flex;
   justify-content: flex-end;
@@ -162,9 +154,8 @@ body {
   flex-wrap: wrap;
 }
 
-/* Cada cuadro de proyecto */
 .proyecto {
-  width: 30%; /* Tamaño de los cuadros */
+  width: 30%;
   gap: 10px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
@@ -174,63 +165,62 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Asegura que el botón se quede en la parte inferior */
-  height: 600px; /* Establece una altura fija para todos los cuadros */
-  position: relative; /* Necesario para alinear los botones en la parte inferior */
+  justify-content: space-between;
+  height: 600px;
+  position: relative;
 }
 
 .proyecto img {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  object-fit: cover; /* Asegura que la imagen cubra bien el área del cuadro */
+  object-fit: cover;
 }
 
 .proyecto h3 {
   font-family: "Helvetica Neue", sans-serif;
-  font-weight: 200; /* Tipografía fina */
+  font-weight: 200;
   font-size: 1.6rem;
-  margin: 20px 0 0 0; /* Margen superior controlado */
+  margin: 20px 0 0 0;
   color: #ffffff;
   text-align: center;
-  min-height: 50px; /* Fuerza el mismo alto para todos los títulos */
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .ajustar-margin {
-  margin-top: 0px; /* O menos, según necesites */
+  margin-top: 0px;
 }
 
-/* Botón de cada proyecto */
 .proyecto button {
   background-color: #ffffff;
   border: none;
-  padding: 20px; /* Botón más grande */
+  padding: 20px;
   color: rgb(0, 0, 0);
   cursor: pointer;
   width: 280px;
   height: 3px;
   font-weight: bold;
-  border-radius: 00%; /* Botón redondo */
+  border-radius: 00%;
   display: flex;
   justify-content: center;
-  align-items: center; /* Centra el icono dentro del botón */
-  font-size: rem; /* Tamaño adecuado para el icono */
+  align-items: center;
+  font-size: rem;
   position: absolute;
   left: 165px;
-  bottom: 20px; /* Asegura que esté en la parte inferior */
+  bottom: 20px;
 
-  transform: translateX(-50%); /* Centra el botón horizontalmente */
+  transform: translateX(-50%);
 }
 
 .proyecto button:hover {
-  background-color: #ff3de2; /* Efecto hover */
+  background-color: #ff3de2;
   color: rgb(255, 255, 255);
 }
 
 .proyecto i {
-  font-size: 1rem; /* Tamaño del icono */
+  font-size: 1rem;
 }
 
 .proyecto button:hover {
@@ -259,14 +249,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 600px 0px 100px 100px; /* arriba, derecha, abajo, izquierda (dejamos espacio para menú fijo) */
+  padding: 600px 0px 100px 100px;
   box-sizing: border-box;
 }
 
 .fotografia-box h2 {
   font-family: "Anton", sans-serif;
   font-size: 48px;
-  margin: 80px 0 0 0; /* Margen superior controlado */
+  margin: 80px 0 0 0;
   color: rgb(255, 255, 255);
   text-align: left;
   width: 100%;
@@ -282,16 +272,16 @@ body {
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 4fr);
-  gap: 6px; /* espacio entre rectángulos */
+  gap: 6px;
   .contenedor {
     display: flex;
-    gap: 60px; /* espacio entre columnas */
+    gap: 60px;
   }
   width: 100%;
   max-width: 1000px;
   height: 100px;
   width: 1120px;
-  margin-bottom: 1070px; /* borde abajo */
+  margin-bottom: 1070px;
   margin-right: 150px;
 }
 
@@ -301,7 +291,7 @@ body {
   overflow: hidden;
   width: 100%;
   width: 320px;
-  height: 200px; /* más alto */
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,7 +326,7 @@ body {
 }
 
 /* CONTACTO */
-/* Estilo general del cuerpo de la página */
+
 body {
   margin: 0;
   padding: 0;
@@ -344,38 +334,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
-  background-color: #f0f0f0; /* Color de fondo claro */
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-/* Cuadro de contacto centrado */
 .contacto-box {
-  background-color: #000; /* Fondo negro */
+  background-color: #000;
   padding: 80px;
   width: 800px;
-  text-align: left; /* Alineación de texto a la izquierda */
+  text-align: left;
 }
 
-/* Estilo de la información dentro del cuadro */
 .contacto-info {
-  font-weight: 200; /* Tipografía fina */
+  font-weight: 200;
   color: white;
   font-size: 1.3rem;
-  margin: 10px 0; /* Espaciado entre los párrafos */
+  margin: 10px 0;
 }
 
-/* Estilo de los enlaces */
 .contacto-info a {
   text-decoration: none;
-  color: #ff3de2; /* Color rosa para los enlaces */
+  color: #ff3de2;
 }
 
 .contacto-info a:hover {
-  color: #ff65ea; /* Cambio de color al pasar el ratón */
+  color: #ff65ea;
 }
 
 /*SOBRE MI */
-/* Rectángulo negro detrás del texto */
+
 .overlay {
   position: absolute;
   top: 270px;
@@ -385,19 +372,17 @@ body {
   background-color: rgba(0, 0, 0, 1);
 }
 
-/* Párrafo del texto largo */
 .sobre-mi-texto p {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 0.9rem;
   color: #ccc;
   line-height: 1.8;
   text-align: left;
-  max-width: 50%; /* antes era 80%, ahora más estrecho */
+  max-width: 50%;
   margin-left: 40px;
   margin-right: 0;
 }
 
-/* Menú lateral fijo */
 .sidebar {
   position: fixed;
   top: 0;
@@ -435,11 +420,11 @@ body {
 .sobre-mi-box {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alinea arriba si texto es largo */
+  align-items: flex-start;
   padding: 40px;
   gap: 40px;
 }
-/* SOBRE MÍ – ESTRUCTURA EN FILA Y FOTO A LA DERECHA */
+
 .sobre-mi-box {
   display: flex;
   justify-content: space-between;
@@ -455,33 +440,28 @@ body {
   z-index: 0;
 }
 
-/* Texto "Sobre mí" alineado a la izquierda */
 .sobre-mi-texto {
-  flex: 0 0 45%; /* ancho más estrecho */
+  flex: 0 0 45%;
 }
 
-/* Caja negra de "Sobre mí" */
 .sobre-mi-box {
   position: absolute;
-  top: 40px; /* Posición desde el top, ajustable según sea necesario */
-  left: 300px; /* Empuja el recuadro a la derecha, para que no quede debajo del menú lateral */
-  right: 500px; /* Asegura que haya un pequeño margen desde la derecha */
+  top: 40px;
+  left: 300px;
+  right: 500px;
   background-color: rgb(0, 0, 0);
-  z-index: 1; /* Asegura que quede por encima del fondo */
+  z-index: 1;
   padding: 40px;
   display: flex;
-  flex-direction: row; /* Coloca el texto y la imagen en fila */
-  gap: 40px; /* Espacio entre el texto y la imagen */
-  width: calc(
-    95% - 240px
-  ); /* Ocupa todo el ancho menos el espacio del menú lateral fijo */
-  box-sizing: border-box; /* Para que el padding no afecte al tamaño total */
+  flex-direction: row;
+  gap: 40px;
+  width: calc(95% - 240px);
+  box-sizing: border-box;
 }
 
-/* Contenedor del texto */
 .sobre-mi-texto {
   flex: 1;
-  max-width: 60%; /* Ajusta el ancho del texto */
+  max-width: 60%;
 }
 
 .sobre-mi-texto h2 {
@@ -501,26 +481,25 @@ body {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
-  max-width: 100%; /* El texto ocupa todo el ancho disponible */
-  margin-bottom: 30px; /* Espacio entre los párrafos */
-}
-/* Contenedor de la foto */
-.sobre-mi-foto {
-  display: flex;
-  justify-content: flex-start; /* Mueve la imagen hacia la izquierda */
-  align-items: flex-start; /* Mueve la imagen hacia arriba */
-  margin-top: 20px; /* Da espacio arriba */
-  flex: 1;
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
-/* Estilo de la imagen */
-.sobre-mi-foto img {
-  width: 400px; /* Tamaño de la imagen */
-  height: auto;
-  border-radius: 0; /* Sin bordes redondeados */
+.sobre-mi-foto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  flex: 1;
+  width: 100%;
 }
-/* TIPOGRAFÍA – una imagen a cada lado y texto en el centro */
+
+.sobre-mi-foto img {
+  width: 400px;
+  height: auto;
+  border-radius: 0;
+}
+
 .tipografia-box {
   position: absolute;
   top: 40px;
@@ -570,26 +549,26 @@ body {
   text-align: center;
   margin-bottom: 100px;
 }
-/* FANZINE – texto a la izquierda, dos fotos apiladas a la derecha */
+
 .fanzine-box {
   position: absolute;
   top: 40px;
   left: 300px;
-  right: 300px; /* más simétrico que right: 500px */
+  right: 300px;
   background-color: rgb(0, 0, 0);
   z-index: 1;
   padding: 40px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* asegura que texto y fotos empiecen arriba */
+  align-items: flex-start;
   gap: 40px;
-  width: calc(100% - 600px); /* ajustado según márgenes */
+  width: calc(100% - 600px);
   box-sizing: border-box;
 }
 
 .fanzine-texto {
   flex: 1;
-  max-width: 55%; /* un poco más compacto para dar más aire a las imágenes */
+  max-width: 55%;
 }
 
 .fanzine-foto {
@@ -598,20 +577,20 @@ body {
   flex-direction: column;
   gap: 20px;
   justify-content: flex-start;
-  align-items: flex-start; /* cambia a izquierda para alinearse con el texto */
+  align-items: flex-start;
 }
 
 .fanzine-foto img {
   width: 100%;
   max-width: 300px;
   height: auto;
-  border-radius: 8px; /* opcional: mejora visual */
+  border-radius: 8px;
 }
 .back-arrow {
   position: absolute;
   top: 40px;
   left: 40px;
-  z-index: 10; /* aseguramos que esté por encima */
+  z-index: 10;
   display: block;
   padding: 10px;
   width: fit-content;
