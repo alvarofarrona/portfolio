@@ -1,0 +1,630 @@
+/* Fondo oscuro general */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+/* TITULOS EN TODAS LAS SECCIONES */
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ESTILO GENERAL DE CONTENIDO */
+.rectangulo-pagina {
+  margin-left: 240px;
+  padding: 40px;
+}
+
+/* HOME */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fff;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Video de fondo */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Caja negra de "Sobre mí" */
+.sobre-mi-box {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 0; /* Deja que ocupe todo el ancho de la pantalla */
+  right: 0; /* Deja que ocupe todo el ancho de la pantalla */
+  background-color: black;
+  z-index: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0 60px;
+}
+
+/* Nombre en el lado izquierdo */
+.nombre-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding-left: 40px;
+  z-index: 2;
+}
+
+.nombre {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(6rem, 6vw, 6rem);
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Menú en el lado derecho */
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  padding-right: 80px;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu a {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff3de2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TRABAJOS */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.trabajos-box {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cada cuadro de proyecto */
+.proyecto {
+  width: 30%; /* Tamaño de los cuadros */
+  gap: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  background-color: #000000;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Asegura que el botón se quede en la parte inferior */
+  height: 600px; /* Establece una altura fija para todos los cuadros */
+  position: relative; /* Necesario para alinear los botones en la parte inferior */
+}
+
+.proyecto img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: cover; /* Asegura que la imagen cubra bien el área del cuadro */
+}
+
+.proyecto h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 200; /* Tipografía fina */
+  font-size: 1.6rem;
+  margin: 20px 0 0 0; /* Margen superior controlado */
+  color: #ffffff;
+  text-align: center;
+  min-height: 50px; /* Fuerza el mismo alto para todos los títulos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ajustar-margin {
+  margin-top: 0px; /* O menos, según necesites */
+}
+
+/* Botón de cada proyecto */
+.proyecto button {
+  background-color: #ffffff;
+  border: none;
+  padding: 20px; /* Botón más grande */
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 280px;
+  height: 3px;
+  font-weight: bold;
+  border-radius: 00%; /* Botón redondo */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra el icono dentro del botón */
+  font-size: rem; /* Tamaño adecuado para el icono */
+  position: absolute;
+  left: 165px;
+  bottom: 20px; /* Asegura que esté en la parte inferior */
+
+  transform: translateX(-50%); /* Centra el botón horizontalmente */
+}
+
+.proyecto button:hover {
+  background-color: #ff3de2; /* Efecto hover */
+  color: rgb(255, 255, 255);
+}
+
+.proyecto i {
+  font-size: 1rem; /* Tamaño del icono */
+}
+
+.proyecto button:hover {
+  background-color: #ff3de2;
+}
+/* FOTOGRAFÍA */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.fotografia-box {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 600px 0px 100px 100px; /* arriba, derecha, abajo, izquierda (dejamos espacio para menú fijo) */
+  box-sizing: border-box;
+}
+
+.fotografia-box h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 48px;
+  margin: 80px 0 0 0; /* Margen superior controlado */
+  color: rgb(255, 255, 255);
+  text-align: left;
+  width: 100%;
+}
+
+.descripcion {
+  max-width: 1000px;
+  margin-bottom: 30px;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: left;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  gap: 6px; /* espacio entre rectángulos */
+  .contenedor {
+    display: flex;
+    gap: 60px; /* espacio entre columnas */
+  }
+  width: 100%;
+  max-width: 1000px;
+  height: 100px;
+  width: 1120px;
+  margin-bottom: 1070px; /* borde abajo */
+  margin-right: 150px;
+}
+
+.foto-cuadro {
+  background-color: black;
+  border: 4px solid rgb(0, 0, 0);
+  overflow: hidden;
+  width: 100%;
+  width: 320px;
+  height: 200px; /* más alto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.foto-cuadro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.foto-cuadro:hover img {
+  transform: scale(1.1);
+}
+
+.recorte-arriba {
+  width: 300%;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+
+.recorte-centro {
+  width: 100%;
+  height: 00px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+/* CONTACTO */
+/* Estilo general del cuerpo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+  background-color: #f0f0f0; /* Color de fondo claro */
+}
+
+/* Cuadro de contacto centrado */
+.contacto-box {
+  background-color: #000; /* Fondo negro */
+  padding: 80px;
+  width: 800px;
+  text-align: left; /* Alineación de texto a la izquierda */
+}
+
+/* Estilo de la información dentro del cuadro */
+.contacto-info {
+  font-weight: 200; /* Tipografía fina */
+  color: white;
+  font-size: 1.3rem;
+  margin: 10px 0; /* Espaciado entre los párrafos */
+}
+
+/* Estilo de los enlaces */
+.contacto-info a {
+  text-decoration: none;
+  color: #ff3de2; /* Color rosa para los enlaces */
+}
+
+.contacto-info a:hover {
+  color: #ff65ea; /* Cambio de color al pasar el ratón */
+}
+
+/*SOBRE MI */
+/* Rectángulo negro detrás del texto */
+.overlay {
+  position: absolute;
+  top: 270px;
+  bottom: 270px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* Párrafo del texto largo */
+.sobre-mi-texto p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.8;
+  text-align: left;
+  max-width: 50%; /* antes era 80%, ahora más estrecho */
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+/* Menú lateral fijo */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  gap: 20px;
+  margin-top: auto;
+}
+
+.sidebar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+  color: #ff3de2;
+}
+
+.sobre-mi-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinea arriba si texto es largo */
+  padding: 40px;
+  gap: 40px;
+}
+/* SOBRE MÍ – ESTRUCTURA EN FILA Y FOTO A LA DERECHA */
+.sobre-mi-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  background-color: black;
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 240px;
+  right: 40px;
+  z-index: 0;
+}
+
+/* Texto "Sobre mí" alineado a la izquierda */
+.sobre-mi-texto {
+  flex: 0 0 45%; /* ancho más estrecho */
+}
+
+/* Caja negra de "Sobre mí" */
+.sobre-mi-box {
+  position: absolute;
+  top: 40px; /* Posición desde el top, ajustable según sea necesario */
+  left: 300px; /* Empuja el recuadro a la derecha, para que no quede debajo del menú lateral */
+  right: 500px; /* Asegura que haya un pequeño margen desde la derecha */
+  background-color: rgb(0, 0, 0);
+  z-index: 1; /* Asegura que quede por encima del fondo */
+  padding: 40px;
+  display: flex;
+  flex-direction: row; /* Coloca el texto y la imagen en fila */
+  gap: 40px; /* Espacio entre el texto y la imagen */
+  width: calc(
+    95% - 240px
+  ); /* Ocupa todo el ancho menos el espacio del menú lateral fijo */
+  box-sizing: border-box; /* Para que el padding no afecte al tamaño total */
+}
+
+/* Contenedor del texto */
+.sobre-mi-texto {
+  flex: 1;
+  max-width: 60%; /* Ajusta el ancho del texto */
+}
+
+.sobre-mi-texto h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.sobre-mi-texto p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.8;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%; /* El texto ocupa todo el ancho disponible */
+  margin-bottom: 30px; /* Espacio entre los párrafos */
+}
+/* Contenedor de la foto */
+.sobre-mi-foto {
+  display: flex;
+  justify-content: flex-start; /* Mueve la imagen hacia la izquierda */
+  align-items: flex-start; /* Mueve la imagen hacia arriba */
+  margin-top: 20px; /* Da espacio arriba */
+  flex: 1;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Estilo de la imagen */
+.sobre-mi-foto img {
+  width: 400px; /* Tamaño de la imagen */
+  height: auto;
+  border-radius: 0; /* Sin bordes redondeados */
+}
+/* TIPOGRAFÍA – una imagen a cada lado y texto en el centro */
+.tipografia-box {
+  position: absolute;
+  top: 40px;
+  left: 300px;
+  right: 500px;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: calc(95% - 240px);
+  box-sizing: border-box;
+}
+
+.tipografia-foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tipografia-foto img {
+  width: 300px;
+  height: auto;
+}
+
+.tipografia-texto {
+  flex: 2;
+  max-width: 60%;
+}
+
+.tipografia-texto h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.tipografia-texto p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* FANZINE – texto a la izquierda, dos fotos apiladas a la derecha */
+.fanzine-box {
+  position: absolute;
+  top: 40px;
+  left: 300px;
+  right: 300px; /* más simétrico que right: 500px */
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* asegura que texto y fotos empiecen arriba */
+  gap: 40px;
+  width: calc(100% - 600px); /* ajustado según márgenes */
+  box-sizing: border-box;
+}
+
+.fanzine-texto {
+  flex: 1;
+  max-width: 55%; /* un poco más compacto para dar más aire a las imágenes */
+}
+
+.fanzine-foto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start; /* cambia a izquierda para alinearse con el texto */
+}
+
+.fanzine-foto img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px; /* opcional: mejora visual */
+}
+.back-arrow {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 10; /* aseguramos que esté por encima */
+  display: block;
+  padding: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.back-arrow svg {
+  width: 55px;
+  height: 55px;
+  stroke: white;
+  transition: stroke 0.3s ease;
+}
+
+.back-arrow:hover svg {
+  stroke: #ff3de2;
+}
